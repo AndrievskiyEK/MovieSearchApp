@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieSearchApp</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="icon" href="./resources/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="search">        
+        <form class="search__form">
+            <input
+            id="searchInput"
+            type="text"
+            placeholder="Введите название фильма на английском"
+            class="search__form-input"/>
+            <button id="searchBtn" class="search__form-btn">Найти</button>
+        </form>
+        <div class="search-wrapper">
+        </div>
+        <ul id="searchResult" class="search__result">
+            <li class="result__movie" id="${imdbID}">
+                <img src="./resources/film_promo.png" alt="обложка фильма" class="result__movie-image"/>
+                <div class="result__movie-wrapper">
+                    <h2 class="result__movie-title">Batman Begins</h2>
+                    <p class="result__movie-year">2005</p>
+                    <p class="result__movie-type">Фильм</p>
+                </div>
+            </li>
+            <li class="result__movie" id="${imdbID}">
+                <img src="./resources/film_promo.png" alt="обложка фильма" class="result__movie-image"/>
+                <div class="result__movie-wrapper">
+                    <h2 class="result__movie-title">Batman Begins</h2>
+                    <div class="result__movie-year">2005</div>
+                    <div class="result__movie-type">Фильм</div>
+                </div>
+            </li>
+            <li class="result__movie" id="${imdbID}">
+                <img src="./resources/film_promo.png" alt="обложка фильма" class="result__movie-image"/>
+                <div class="result__movie-wrapper">
+                    <h2 class="result__movie-title">Batman Begins</h2>
+                    <div class="result__movie-year">2005</div>
+                    <div class="result__movie-type">Фильм</div>
+                </div>
+            </li>
+            <li class="result__movie" id="${imdbID}">
+                <img src="./resources/film_promo.png" alt="обложка фильма" class="result__movie-image"/>
+                <div class="result__movie-wrapper">
+                    <h2 class="result__movie-title">Batman Begins</h2>
+                    <div class="result__movie-year">2005</div>
+                    <div class="result__movie-type">Фильм</div>
+                </div>
+            </li>
+        </ul>      
+    </div>
+    <div class="movie__page movie__page-hide"> 
+        <button id="contenBtnClose" class="movie__content-btn-close">←Назад к поиску</button>
+        <div class="movie__info">
+            <img src="./resources/film_page.png" alt="обложка фильма" class="movie__info-image" />
+            <div class="movie__info-wrapper">
+                <h2 class="movie__info-title">Batman Begins</h2>
+                <ul class="info__list">
+                    <li class="list__property">
+                        <p class="label">ГОД: </p>
+                        <span class="property__value">2005</span>
+                    </li>
+                    <li class="list__property">
+                        <p class="label">Рейтинг: </p>
+                        <span class="property__value">PG-13</span>
+                    </li>
+                    <li class="list__property">
+                        <p class="label">Дата выхода: </p>
+                        <span class="property__value">15 june 2005</span>
+                    </li>
+                    <li class="list__property">
+                        <p class="label">Продолжительность: </p>
+                        <span class="property__value">140 минут</span>
+                    </li>
+                    <li class="list__property">
+                        <p class="label">Жанр: </p>
+                        <span class="property__value">Action, Crime, Drama</span>
+                    </li>
+                    <li class="list__property">
+                        <p class="label">Режиссер: </p>
+                        <span class="property__value">Christopher Nolan</span>
+                    </li>
+                    <li class="list__property">
+                        <p class="label">Сценарий: </p>
+                        <span class="property__value">Bob Kane, David S. Goyer, Christopher Nolan</span>
+                    </li>              
+                    <li class="list__property">
+                        <p class="label">Актеры: </p>
+                        <span class="property__value">Christian Bale, Michael Caine, Ken Watanabe</span>
+                    </li>               
+                </ul>                   
+            </div>
+        </div>
+        <p class="movie__info-description label">After witnessing his parents' 
+            death, Bruce learns the art of fighting to confront injustice. 
+            When he returns to Gotham as Batman, he must stop a secret 
+            society that intends to destroy the city.</p>
+    </div>     
+    <script src="./main.js"></script>    
+</body>
+</html>
