@@ -49,7 +49,7 @@ const renderMoviesList = (movies) => {
     searchResultNode.innerHTML = "";
 
     movies.forEach((movie) => {
-        /*Шаблон из HTML
+        /*----Шаблон из HTML----
         <li class="result__movie" id="${imdbID}">
             <img src="./resources/film_promo.png" alt="обложка фильма" class="result__movie-image"/>
             <div class="result__movie-wrapper">
